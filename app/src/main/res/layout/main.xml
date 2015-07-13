@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:weightSum="1">
+
+		<ViewSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewSwitcher" >
+
+            <ViewFlipper
+                android:id="@+id/webFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateFirstView="false"
+                android:focusable="false">
+
+            </ViewFlipper>
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/splash"
+				android:src="@drawable/ic_logo" />
+		</ViewSwitcher>
+</FrameLayout>
+
+	<!--<ViewAnimator-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:id="@+id/viewAnimator"-->
+		<!--android:animateFirstView="true" />-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/logged_in_display"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!-->-->
+		<!--<WebView-->
+          <!--android:id="@+id/image_view"-->
+		  <!--android:layout_width="fill_parent"-->
+		  <!--android:layout_height="wrap_content"-->
+		  <!--android:layout_weight="1"-->
+		  <!--/>-->
+		<!--<LinearLayout-->
+		    <!--android:orientation="horizontal"-->
+		    <!--android:layout_width="fill_parent"-->
+		    <!--android:layout_height="wrap_content"-->
+			<!--android:layout_weight="1">-->
+		    <!--<Button-->
+		      <!--android:id="@+id/roulette_button"-->
+		      <!--android:text="Roulette"-->
+		      <!--android:layout_width="fill_parent"-->
+		      <!--android:layout_height="wrap_content"-->
+	          <!--android:layout_weight="1"-->
+		      <!--/>-->
+		    <!--&lt;!&ndash;<Button &ndash;&gt;-->
+		      <!--&lt;!&ndash;android:id="@+id/photo_button" &ndash;&gt;-->
+		      <!--&lt;!&ndash;android:text="New Photo" &ndash;&gt;-->
+		      <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+		      <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+	          <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+		      <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+<!--</FrameLayout>-->
+	      
